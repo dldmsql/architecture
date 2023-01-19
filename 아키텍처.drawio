@@ -1,1 +1,34 @@
-<mxGraphModel><root><mxCell id="0"/><mxCell id="1" parent="0"/></root></mxGraphModel>
+<mxfile host="65bd71144e">
+    <diagram id="7QqPtaQoR5CSWOnQSoGx" name="ERD 설계">
+        <mxGraphModel dx="928" dy="593" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="ERD 설계 1차" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" vertex="1" parent="1">
+                    <mxGeometry x="60" y="30" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="User ( &lt;u&gt;UserID&lt;/u&gt;, NickName, PhoneNum )" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="90" width="470" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="House ( &lt;u&gt;HouseID&lt;/u&gt;, Address, Size, &lt;u&gt;OwnerID&lt;/u&gt;, OwnType, Price, MadeAt )" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="140" width="470" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="Post ( &lt;u&gt;PostID&lt;/u&gt;, Title, Contents, ImageURL, &lt;u&gt;WriterID&lt;/u&gt;, &lt;u&gt;CategoryID&lt;/u&gt;&amp;nbsp;)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="190" width="470" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="Comment ( &lt;u&gt;CommentID&lt;/u&gt;, Contents, &lt;u&gt;PostID&lt;/u&gt;, &lt;u&gt;CommenterID&lt;/u&gt; )" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="240" width="470" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="PostCategory ( CategoryID, Name )" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="290" width="470" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="사용자는 닉네임과 전화번호를 통해 회원가입을 한다." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="470" y="90" width="470" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="빈 집 매물은 매물이 위치한 주소, 매물의 크기, 매매/월세 여부, 그때의 가격, 준공연도의 정보를 가지고 있다.&lt;br&gt;모든 빈 집 매물은 반드시 소유자가 존재해야 하며, 소유자는 우리 사이트에 등록된 회원이어야 한다." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="470" y="140" width="470" height="30" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
